@@ -1,10 +1,10 @@
 "use-client";
 import styles from "./RecipeCard.module.css"
 
-const RecipeCard = ({img, title, totalTime, cuisineType,link}) => (
+const RecipeCard = ({img, title, totalTime, cuisineType,link, emoji}) => (
 <div className = {styles.RecipeCardWrapper}>
-    
-    <div className = {styles.RecipeCardImage}>
+<img className ={styles.emoji} src={emoji}></img>
+    <div className = {styles.RecipeCardImage}>  
         <img src ={img}></img>
     </div>
     <div className = {styles.RecipeCardDetails}>
