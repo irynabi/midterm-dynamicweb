@@ -5,7 +5,7 @@ import Header from "../app/components/Header";
 import CatIcon from "../app/components/catIcon.js";
 
 export async function getStaticProps(params){
-    const food = (params && params.q) || "apples"
+    const food = (params && params.q) || "pumpkin"
     const baseURL1 = `https://api.edamam.com/search?q=${food}&app_id=${process.env.API_ID}&app_key=${process.env.FOOD_API_KEY}&to=6`;
     const catData= 'http://placekitten.com/200/300'
     const response1 = await fetch(baseURL1);
